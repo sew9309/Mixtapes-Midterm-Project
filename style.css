@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#mainContainer {
+  background-color: yellow;
+}
+
+#heroDiv {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#newAlbumDiv {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.newAlbumCoverDiv {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
+  min-height: 100vh; // height of the browser viewport
+  display: flex;
+  align-items: center;
+  background-color: blue;
+}
+
+.newAlbumCover {
+  display: flex;
+  width: 40vw;
+  height: 40vw;
+  align-self: center;
+  position: relative;
+}
+
+.newAlbumTextDiv {
+  width: 50vw;
+  height: 100vh;
+  background-color: red;
+}
+
+#newMusicVideoDiv {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#accomplishmentsDiv {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+#membersDiv {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
