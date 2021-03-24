@@ -2,16 +2,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+h1, h2 {
+  display: block;
+  font-family: 'Londrina Shadow', cursive;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+p {
+  font-family: 'Londrina Solid', cursive;
+  margin: 10px 10px 20vw 20vw;
 }
 
 #mainContainer {
   background-color: yellow;
 }
 
-#heroDiv {
+#headerDiv {
+  position: fixed;
   background-color: black;
   width: 100vw;
+  height: 7vw;
+  opacity: 50%;
+}
+
+#heroDiv {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
+  /* background: linear-gradient(to bottom, black 0%, #4007A4 100%); */
+  /* background-color: black; */
+  /* background-image: url("Assets/MixtapesCollection.jpeg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* z-index: 1; */
+}
+
+.backgroundhero {
+  display: flex;
+  position: absolute;
+  background-image: url("Assets/MixtapesCollection.jpeg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+}
+
+#cityLights {
+  display: absolute;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+#herotext {
+position: absolute;
+text-align: center;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
+color: #FFFFFF;
+font-family: 'Dosis', Helvetica, Arial, sans-serif;
+font-weight:600;
+font-size: 200px;
+align-self: center;
+/* border-style: double;
+padding: 20px 20px 20px 20px;
+border-width: 2px;
+border-color: red; */
 }
 
 #newAlbumDiv {
@@ -20,17 +88,19 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  background: linear-gradient(to bottom, #4007A4 0%, #F731B8 100%);
 }
 
 .newAlbumCoverDiv {
   display: flex;
-  width: 50vw;
+  width: 75vw;
   height: 100vh;
   justify-content: center;
   min-height: 100vh; // height of the browser viewport
   display: flex;
   align-items: center;
-  background-color: blue;
+  flex-direction: column;
+  /* background-color: blue; */
 }
 
 .newAlbumCover {
@@ -39,20 +109,34 @@
   height: 40vw;
   align-self: center;
   position: relative;
+
 }
 
 .newAlbumTextDiv {
-  width: 50vw;
+  display: flex;
+  width: 25vw;
   height: 100vh;
-  background-color: red;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #newMusicVideoDiv {
   background-color: black;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+.newMusicVideo iframe {
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  position: relative;
+}
 #accomplishmentsDiv {
   background-color: white;
   width: 100vw;
@@ -68,12 +152,13 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
+  /* grid-gap: 20px; */
+  /* align-items: stretch; */
   }
 
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
+  .grid img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+  }
