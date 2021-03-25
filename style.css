@@ -233,6 +233,7 @@ iframe.spotify{
 #membersDiv {
   /* background-color: black; */
   background-image: url("Assets/purplemixtapes.png");
+  /* -webkit-filter: blur(6px); */
   width: 100vw;
   height: 100vh;
 }
@@ -286,4 +287,50 @@ iframe.spotify{
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.11);
+  }
+
+  .memberPage {
+    /* background-color: black; */
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .memberInfo {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+  }
+
+  .memberPFPDiv {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+  }
+
+  .memberPFP {
+    /* max-width:75vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    /* justify-content: flex-end; */
+    overflow: hidden;
+    /* filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(250deg);
+    background-image:url("Assets/Sofia Wheeler _ Members.png"); */
+
+  }
+
+  .memberPFP img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    /* filter: grayscale(100%) sepia(100%) hue-rotate(220deg); */
   }
