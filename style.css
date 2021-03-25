@@ -251,4 +251,13 @@ iframe.spotify{
       height: 100%;
       display: block;
       object-fit: cover;
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all .8s ease-in-out;
+  }
+
+  .member-grid img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.11);
   }
