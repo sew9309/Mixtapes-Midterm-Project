@@ -20,35 +20,43 @@ p {
 }
 
 .tab h1 {
-  /* font-size: 25px; */
+  text-decoration: none;
 }
 
 .glowytext {
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
   color: #FFFFFF;
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
-  font-weight:600;
+  font-weight: 600;
   font-size: 200px;
 }
 
 #mainContainer {
-  background-color: yellow;
+  background-color: purple;
 }
 
 #headerDiv {
-  position: fixed;
-  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
   width: 100vw;
   height: 7vw;
-  opacity: 50%;
+  margin: 20px 20px 10px 10px;
+  /* opacity: 50%; */
   z-index: 2;
+}
+
+#LogoIcon {
+  width: 300px;
+  margin-left: 75px;
 }
 
 #navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 10px 10px 10px;
+  width: 55%;
 }
 
 .tab {
@@ -76,11 +84,12 @@ p {
 }
 
 #MixtapesIcon {
-  width: 100px;
+  width: 75px;
 }
 
 #heroDiv {
   display: flex;
+  position: relative;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -104,16 +113,17 @@ p {
   height: 100vh;
 }
 
-/* #cityLights {
-  display: absolute;
+#cityLights {
+  display: flex;
+  position: absolute;
   justify-content: center;
   object-fit: cover;
   object-position: center;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
   width: 100%;
-  height: auto;
-} */
+  height: 100%;
+}
 
 #herotext {
 position: absolute;
@@ -122,17 +132,17 @@ align-self: center;
 }
 
 #newAlbumDiv {
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
+  background-color: #A2338B;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #4007A4 0%, #F731B8 100%);
+  padding-top: 50px;
 }
 
 .newAlbumCoverDiv {
   display: flex;
-  width: 75vw;
+  width: 50%;
   height: 100vh;
   justify-content: center;
   min-height: 100vh; // height of the browser viewport
@@ -144,17 +154,23 @@ align-self: center;
 
 .newAlbumCover {
   display: flex;
-  width: 40vw;
-  height: 40vw;
+  width: 100%;
+  height: 35vw;
   align-self: center;
   position: relative;
+  justify-content: center;
 
+}
+
+iframe.spotify{
+  position: relative;
+  width: 100%;
 }
 
 .newAlbumTextDiv {
   display: flex;
-  width: 25vw;
-  height: 100vh;
+  width: 50%;
+  height: auto;
   /* background-color: red; */
   justify-content: center;
   align-items: center;
@@ -167,15 +183,38 @@ align-self: center;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-content: center;
+  padding-bottom: 100px;
 }
 
 .newMusicVideo iframe {
-  width: 65vw;
-  height: 65vh;
+  display: flex;
+  width: 60vw;
+  height: 60vh;
   display: flex;
   position: relative;
+  padding: 20px 20px 20px 20px;
 }
+
+.newMusicVideo {
+  display: flex;
+  align-self: center;
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.newMusicVideoTextDiv{
+  display: flex;
+  width: 25%
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 100px;
+}
+
 #accomplishmentsDiv {
   background-color: white;
   width: 100vw;
@@ -183,27 +222,33 @@ align-self: center;
 }
 
 #membersDiv {
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
   width: 100vw;
   height: 100vh;
 }
-
-.grid {
+.membersgrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 60%;
+  height: 60%;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+  padding: 10px;
   /* grid-gap: 20px; */
   /* align-items: stretch; */
   }
 
-  .grid img {
+.member-grid {
+  text-align: center;
+  padding: 5px;
+}
+
+  .member-grid img {
       width: 100%;
       height: 100%;
       display: block;
       object-fit: cover;
   }
-/* @@keyframes hoverglow {
-
-}
-.hoverglow {
-  animation:
-} */

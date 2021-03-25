@@ -11,11 +11,11 @@
   <body>
 <div id="mainContainer">
   <div id="headerDiv">
+    <div id="LogoIcon"><a href="https://www.google.com/"><img src="Assets/MixtapesIcon.svg" alt="Mixtapes Icon" id="MixtapesIcon"></a></div>
     <div id="navbar">
-      <div id="LogoIcon"><img src="Assets/MixtapesIcon.svg" alt="Mixtapes Icon" id="MixtapesIcon"></div>
-      <a href="https//:google.com"><div class="tab" id="AboutTab"><h1>ABOUT</h1></div></a>
-      <div class="tab" id="MembersTab"><h1>MEMBERS</h1></div>
-      <div class="tab" id="MediaTab"><h1>MEDIA</h1></div>
+      <div class="tab" id="AboutTab"><a href="https://www.google.com/"><h1>ABOUT</h1></a></div>
+      <div class="tab" id="MembersTab"><a href="https://www.google.com/"><h1>MEMBERS</h1></a></div>
+      <div class="tab" id="MediaTab"><a href="https://www.google.com/"><h1>MEDIA</h1></a></div>
     </div>
   </div>
   <div id="heroDiv">
@@ -29,36 +29,53 @@
     </div>
   </div>
   <div id="newAlbumDiv">
-     <h1>Latest Album</h1><br>
-    <div class="newAlbumTextDiv">
-      <p>2020 is the Mixtapes' debut EP. In light of COVID-19, all recordings were done virtually from bedrooms and some using iPhone voice memos. 2020 is proof that with an idea and collaboration, anything it possible. Though we couldn't be together physically, we didn't let that stop us from continuinig to create beautiful music that we are proud of.</p>
-      <a class="glowButton" href="#">Glow Button</a><br><br><br>
+     <!-- <h1>Latest Album</h1><br> -->
+    <div class="newAlbumCoverDiv">
+      <div class="newAlbumCover">
+        <img src="Assets/DestinationsAlbumCover.png" alt="Destinations Album Cover">
+      </div>
+      <iframe class="spotify" src="https://open.spotify.com/embed/album/1RwszWjVQGUAOA0doKvTTl" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <!-- <p>2020 is the Mixtapes' debut EP. In light of COVID-19, all recordings were done virtually from bedrooms and some using iPhone voice memos. 2020 is proof that with an idea and collaboration, anything it possible. Though we couldn't be together physically, we didn't let that stop us from continuinig to create beautiful music that we are proud of.</p> -->
     </div>
     <div class="newAlbumCoverDiv">
       <div class="newAlbumCover">
         <img src="Assets/2020AlbumCover.png" alt="2020 Album Cover">
       </div>
-      <iframe src="https://open.spotify.com/embed/album/1RwszWjVQGUAOA0doKvTTl" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe class="spotify" src="https://open.spotify.com/embed/album/1RwszWjVQGUAOA0doKvTTl" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
   </div>
   <div id="newMusicVideoDiv">
+    <div class="newMusicVideoTextDiv">
+      <h1 class="glowytext">2020 Music Video</h1>
+    </div>
     <div class="newMusicVideo">
-      <iframe src="https://www.youtube.com/embed/n2snS4mn6kw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="NewMusicVideoTextDiv">
-
-      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/n2snS4mn6kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div id="accomplishmentsDiv">
-
+    <video playsinline autoplay muted loop id="cityLights">
+  <source src="Assets/citylights copy.mp4" type="video/mp4">
+</video>
   </div>
   <div id="membersDiv">
-    <div class="gridContainer">
-      <div class="">
-
+    <div class="membersgrid">
+      <div class="member-grid"><img src="Assets/Andy Putterman _ Members.png" alt="Andy"></div>
+      <div class="member-grid"><img src="Assets/Barron Tsai _ Members.png" alt="Barron"></div>
+      <div class="member-grid"><img src="Assets/Brendan Quealy _ Assistant Music Director _ Members.png" alt="Brendan"></div>
+      <div class="member-grid"><img src="Assets/Chelsea Melnick _ Members.png" alt="Chelsea"></div>
+      <div class="member-grid"><img src="Assets/Javon Thomas _ Social Media Chair _ Members.png" alt="Javon"></div>
+      <div class="member-grid"><img src="Assets/Joel Morel _ Members.png" alt="Joel"></div>
+      <div class="member-grid"><img src="Assets/KJ Burkhauser _ Events Chair _ Members.png" alt="KJ"></div>
+      <div class="member-grid"><img src="Assets/Madison Yamane _ Members.png" alt="Madison"></div>
+      <div class="member-grid"><img src="Assets/Nic Sylvester _ Secretary & Treasurer _ Members.png" alt="Nic"></div>
+      <div class="member-grid"><img src="Assets/Raeva Sayed _ Vice President _ Members.png" alt="Raeva"></div>
+      <div class="member-grid"><img src="Assets/Sofia Wheeler _ Members.png" alt="Sofia"></div>
+      <div class="member-grid"><img src="Assets/Stephany Guadalupe _ President _ Members.png" alt="Stephany"></div>
+      <div class="member-grid"><img src="Assets/Tenzin Dawa Lama _ Members.png" alt="Tenzin"></div>
+      <div class="member-grid"><img src="Assets/Tony Enderica _ Members.png" alt="Tony"></div>
+      <div class="member-grid"><img src="Assets/Tyler Nabinger _ Music Director _ Members.png" alt="Tyler"></div>
       </div>
     </div>
   </div>
-</div>
   </body>
 </html>
