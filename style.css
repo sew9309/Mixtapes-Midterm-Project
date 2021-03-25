@@ -10,9 +10,10 @@
   font-family: 'Londrina Shadow', cursive; */
 }
 
-h1 {
-  /* font-size: 100px; */
-}
+/* h1.glowytext {
+  font-size: 100px;
+  color: red;
+} */
 
 p {
   font-family: 'Londrina Solid', cursive;
@@ -28,7 +29,7 @@ p {
   color: #FFFFFF;
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 200px;
+  font-size: 100px;
 }
 
 #mainContainer {
@@ -115,7 +116,7 @@ p {
 
 #cityLights {
   display: flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   object-fit: cover;
   object-position: center;
@@ -129,6 +130,7 @@ p {
 position: absolute;
 text-align: center;
 align-self: center;
+font-size: 200px;
 }
 
 #newAlbumDiv {
@@ -137,7 +139,6 @@ align-self: center;
   height: auto;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
 }
 
 .newAlbumCoverDiv {
@@ -154,12 +155,13 @@ align-self: center;
 
 .newAlbumCover {
   display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   height: 35vw;
   align-self: center;
   position: relative;
   justify-content: center;
-
 }
 
 iframe.spotify{
@@ -206,7 +208,7 @@ iframe.spotify{
 
 .newMusicVideoTextDiv{
   display: flex;
-  width: 25%
+  width: 50%;
   position: relative;
   justify-content: center;
   text-align: center;
@@ -216,23 +218,47 @@ iframe.spotify{
 }
 
 #accomplishmentsDiv {
+  display: flex;
+  justify-content: center;
   background-color: white;
   width: 100vw;
   height: 100vh;
 }
 
-#membersDiv {
+.accomplishmentsDiv h1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+}
+
+#membersDiv {
   /* background-color: black; */
+  background-image: url("Assets/purplemixtapes.png");
   width: 100vw;
   height: 100vh;
 }
+
+
+.membersTitle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.membersGridDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .membersgrid {
   display: grid;
-  width: 60%;
-  height: 60%;
+  width: 65%;
+  height: 65%;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr 1fr 1fr;
