@@ -5,18 +5,30 @@
   color: white;
 }
 
-h1, h2 {
+/* h1, h2 {
   display: block;
-  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Shadow', cursive; */
 }
 
 h1 {
-  font-size: 100px;
+  /* font-size: 100px; */
 }
 
 p {
   font-family: 'Londrina Solid', cursive;
   margin: 10px 10px 20vw 20vw;
+}
+
+.tab h1 {
+  /* font-size: 25px; */
+}
+
+.glowytext {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
+  color: #FFFFFF;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size: 200px;
 }
 
 #mainContainer {
@@ -25,10 +37,46 @@ p {
 
 #headerDiv {
   position: fixed;
-  background-color: black;
+  /* background-color: black; */
   width: 100vw;
   height: 7vw;
   opacity: 50%;
+  z-index: 2;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.tab {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 175px;
+  height: 75px;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size: 15px;
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
+  /* padding: 15px 15px 15px 15px; */
+  -webkit-transition: -webkit-box-shadow 100ms ease-out;
+}
+
+.tab:hover {
+  -webkit-transition: -webkit-box-shadow 100ms ease-in;
+  -webkit-box-shadow: 0px 0px 15px 5px #F731B8;
+  box-shadow: 0px 0px 15px 5px #F731B8;
+}
+
+#MixtapesIcon {
+  width: 100px;
 }
 
 #heroDiv {
@@ -56,7 +104,7 @@ p {
   height: 100vh;
 }
 
-#cityLights {
+/* #cityLights {
   display: absolute;
   justify-content: center;
   object-fit: cover;
@@ -65,21 +113,12 @@ p {
   bottom: 0;
   width: 100%;
   height: auto;
-}
+} */
 
 #herotext {
 position: absolute;
 text-align: center;
-text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #252853, 0 0 30px #252853, 0 0 40px #252853, 0 0 55px #252853, 0 0 75px #252853, 2px 2px 2px rgba(37,40,83,0);
-color: #FFFFFF;
-font-family: 'Dosis', Helvetica, Arial, sans-serif;
-font-weight:600;
-font-size: 200px;
 align-self: center;
-/* border-style: double;
-padding: 20px 20px 20px 20px;
-border-width: 2px;
-border-color: red; */
 }
 
 #newAlbumDiv {
@@ -162,3 +201,9 @@ border-color: red; */
       display: block;
       object-fit: cover;
   }
+/* @@keyframes hoverglow {
+
+}
+.hoverglow {
+  animation:
+} */
