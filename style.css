@@ -285,7 +285,7 @@ iframe.spotify{
       object-fit: cover;
       filter: gray; /* IE5+ */
       -webkit-filter: grayscale(1); /* https://codepen.io/codewithJahid/pen/JRPvBj?css-preprocessor=scss */
-      -webkit-transition: all .8s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
   }
 
   .member-grid img:hover {
@@ -296,8 +296,9 @@ iframe.spotify{
 
   .memberPage {
     /* background-color: black; */
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    /* background: rgb(63,94,251); */
+    background-color: black;
+    /* background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%); */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -306,8 +307,12 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100
 
   .memberInfo {
     display: flex;
+    position: absolute;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 200px;
+    width: 100%;
+    height: 100%;
+    font-size: 300px;
   }
 
   .memberPFPDiv {
@@ -315,6 +320,8 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100
     justify-content: center;
     width: inherit;
     height: inherit;
+    position: absolute;
+    /* padding-left: 100px; */
   }
 
   .memberPFP {
@@ -326,6 +333,7 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100
     width: 100%;
     height: 100%;
     align-self: center;
+    /* padding-left: 250px; */
     /* justify-content: flex-end; */
     overflow: hidden;
     /* filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(250deg);
@@ -359,8 +367,37 @@ background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100
     display: flex;
     position: absolute;
     background-color: blueViolet;
-    opacity: 90%;
+    opacity: 95%;
     width: 75%;
     height: 25%;
     align-self: center;
+  }
+
+  .purpleinfodiv h1 {
+    padding-left: 50px;
+  }
+
+  .glowcircle {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    /* background-color: lightblue; */
+    background: rgb(38,247,254);
+/* background: radial-gradient(circle, rgba(38,247,254,1) 0%, rgba(74,249,255,1) 75%, rgba(255,255,255,1) 100%); */
+background-image: radial-gradient(#26F7FE, #26F7FE, white);
+
+    border-radius: 50%;
+    width: 800px;
+    height: 800px;
+    box-shadow: 0px 0px 40px 20px #0ff;
+  }
+
+  .memberInfo h2 {
+    font-size: 175px;
+  }
+#Sofia img {
+  padding-left: 175px;
+}
+  #Brendan img {
+    padding-left: 400px;
   }
