@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid&display=swap" rel="stylesheet">    <title></title>
     <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   </head>
   <body>
 <div id="mainContainer">
@@ -61,24 +62,50 @@
     </div>
     <div class="membersGridDiv">
     <div class="membersgrid">
-      <div class="member-grid"><img src="Assets/Andy Putterman _ Members.png" alt="Andy"></div>
-      <div class="member-grid"><img src="Assets/Barron Tsai _ Members.png" alt="Barron"></div>
-      <div class="member-grid"><img src="Assets/Brendan Quealy _ Assistant Music Director _ Members.png" alt="Brendan"></div>
-      <div class="member-grid"><img src="Assets/Chelsea Melnick _ Members.png" alt="Chelsea"></div>
-      <div class="member-grid"><img src="Assets/Javon Thomas _ Social Media Chair _ Members.png" alt="Javon"></div>
-      <div class="member-grid"><img src="Assets/Joel Morel _ Members.png" alt="Joel"></div>
-      <div class="member-grid"><img src="Assets/KJ Burkhauser _ Events Chair _ Members.png" alt="KJ"></div>
-      <div class="member-grid"><img src="Assets/Madison Yamane _ Members.png" alt="Madison"></div>
-      <div class="member-grid"><img src="Assets/Nic Sylvester _ Secretary & Treasurer _ Members.png" alt="Nic"></div>
-      <div class="member-grid"><img src="Assets/Raeva Sayed _ Vice President _ Members.png" alt="Raeva"></div>
-      <div class="member-grid"><a href="member.html"><img src="Assets/Sofia Wheeler _ Members.png" alt="Sofia"></a></div>
-      <div class="member-grid"><img src="Assets/Stephany Guadalupe _ President _ Members.png" alt="Stephany"></div>
-      <div class="member-grid"><img src="Assets/Tenzin Dawa Lama _ Members.png" alt="Tenzin"></div>
-      <div class="member-grid"><img src="Assets/Tony Enderica _ Members.png" alt="Tony"></div>
-      <div class="member-grid"><img src="Assets/Tyler Nabinger _ Music Director _ Members.png" alt="Tyler"></div>
+      <!-- <div class="member-grid"><img src="Assets/Andy Putterman _ Members.png" alt="Andy"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Barron Tsai _ Members.png" alt="Barron"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Brendan Quealy _ Assistant Music Director _ Members.png" alt="Brendan"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Chelsea Melnick _ Members.png" alt="Chelsea"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Javon Thomas _ Social Media Chair _ Members.png" alt="Javon"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Joel Morel _ Members.png" alt="Joel"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/KJ Burkhauser _ Events Chair _ Members.png" alt="KJ"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Madison Yamane _ Members.png" alt="Madison"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Nic Sylvester _ Secretary & Treasurer _ Members.png" alt="Nic"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Raeva Sayed _ Vice President _ Members.png" alt="Raeva"></div> -->
+      <!-- <div class="member-grid"><a href="member.html"><img src="Assets/Sofia Wheeler _ Members.png" alt="Sofia"></a></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Stephany Guadalupe _ President _ Members.png" alt="Stephany"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Tenzin Dawa Lama _ Members.png" alt="Tenzin"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Tony Enderica _ Members.png" alt="Tony"></div> -->
+      <!-- <div class="member-grid"><img src="Assets/Tyler Nabinger _ Music Director _ Members.png" alt="Tyler"></div> -->
+
+
+<!-- USING FANCYBOX JS LIBRARY-->
+<!-- I was thinking of using a database for this but I'm not sure how many lines of code that would actually save. I suppose it would shorten the amount of HTML but JS not so much. I'd ideally use that if the whole member page was built out and linked to each member image. I want to update this in the future!-->
+      <div class="member-grid"><a href="Assets/Andy Putterman _ Members.png" data-fancybox="images" data-caption="Andy Putterman"><img src="Assets/Andy Putterman _ Members.png" alt="Andy trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Barron Tsai _ Members.png" data-fancybox="images" data-caption="Barron Tsai"><img src="Assets/Barron Tsai _ Members.png" alt="Barron trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Brendan Quealy _ Assistant Music Director _ Members.png" data-fancybox="images" data-caption="Brendan Quealy"><img src="Assets/Brendan Quealy _ Assistant Music Director _ Members.png" alt="Brendan trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Chelsea Melnick _ Members.png" data-fancybox="images" data-caption="Chelsea Melnick"><img src="Assets/Chelsea Melnick _ Members.png" alt="Chelsea trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Javon Thomas _ Social Media Chair _ Members.png" data-fancybox="images" data-caption="Javon Thomas"><img src="Assets/Javon Thomas _ Social Media Chair _ Members.png" alt="Javon trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Joel Morel _ Members.png" data-fancybox="images" data-caption="Joel Morel"><img src="Assets/Joel Morel _ Members.png" alt="Joel trying" /></a></div>
+      <div class="member-grid"><a href="Assets/KJ Burkhauser _ Events Chair _ Members.png" data-fancybox="images" data-caption="KJ Burkhauser"><img src="Assets/KJ Burkhauser _ Events Chair _ Members.png" alt="KJ trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Madison Yamane _ Members.png" data-fancybox="images" data-caption="Madison Yamane"><img src="Assets/Madison Yamane _ Members.png" alt="Madison trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Nic Sylvester _ Secretary & Treasurer _ Members.png" data-fancybox="images" data-caption="Nic Sylvester"><img src="Assets/Nic Sylvester _ Secretary & Treasurer _ Members.png" alt="Nic trying" /></a></div>
+
+      <!-- How do I make the caption a link? -->
+      <div class="member-grid"><a href="member.html" data-fancybox="images" <a href="member.html" data-caption="Sofia Wheeler" </a><img src="Assets/Sofia Wheeler _ Members.png" alt="Sofia trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Raeva Sayed _ Vice President _ Members.png" data-fancybox="images" data-caption="Raeva Sayed"><img src="Assets/Raeva Sayed _ Vice President _ Members.png" alt="Raeva trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Stephany Guadalupe _ President _ Members.png" data-fancybox="images" data-caption="Stephany Guadalupe"><img src="Assets/Stephany Guadalupe _ President _ Members.png" alt="Stephany trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Tenzin Dawa Lama _ Members.png" data-fancybox="images" data-caption="Tenzin Dawa Lama"><img src="Assets/Tenzin Dawa Lama _ Members.png" alt="Tenzin trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Tony Enderica _ Members.png" data-fancybox="images" data-caption="Tony Enderica"><img src="Assets/Tony Enderica _ Members.png" alt="Tony trying" /></a></div>
+      <div class="member-grid"><a href="Assets/Tyler Nabinger _ Music Director _ Members.png" data-fancybox="images" data-caption="Tyler Nabinger"><img src="Assets/Tyler Nabinger _ Music Director _ Members.png" alt="Tyler trying" /></a></div>
+
       </div>
       </div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
   </body>
 </html>

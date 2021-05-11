@@ -20,6 +20,11 @@ p {
   margin: 10px 10px 20vw 20vw;
 }
 
+.fancybox-caption__body {
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+}
+
 .tab h1 {
   text-decoration: none;
 }
@@ -350,6 +355,7 @@ iframe.spotify{
   .weekendpage {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     background-color: black;
     position: absolute;
     width: 100vw;
@@ -400,4 +406,17 @@ background-image: radial-gradient(#26F7FE, #26F7FE, white);
 }
   #Brendan img {
     padding-left: 400px;
+  }
+
+  .musicVideosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .card {
+    background-color: blue;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
   }
